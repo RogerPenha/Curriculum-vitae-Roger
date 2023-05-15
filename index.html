@@ -42,16 +42,26 @@
 
     
     .top{
+        display: flex;
         margin-left: 25%;
         padding: 1px 12px;
         height: 400px;
-        background-color: #1204aa;
     }
+    
+    .top > div {
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+    
+    
+    
+    
     
     .top2{
         margin-left: 25%;
         padding: 1px 12px;
-        height: 400px;
+        height: 300px;
         background-color: #555;
     
     }
@@ -107,7 +117,7 @@
         }
 
     input[type=submit]:hover {
-        background-color: #45a049;
+        background-color:blue;
         }
 
     .container {
@@ -156,88 +166,88 @@
         <li><a href="#ontatos">Contatos</a></li>
     </ul
 
-<div class="top">
-    <div><h2 style="text-align: center;">Meu Currículo</h2></div>
-    <div>
-        <p style="margin-left: 25%;"><img src="foto4.png" alt="minha foto"></p>
+    <div class="top">
+        <h1 style="margin-left: 50%;">Meu Currículo</h1>
+        <p style="margin-left: 45%;"><img src="foto4.png" alt="minha foto"></p>
+        <h2 style="margin-left: 45%;">Nome: Roger Souza Pereira Penha</h2>
+        <h2 style="margin-left: 45%">Idade: 17</h2>
+        <h2 style="margin-left: 45%">Gênero: Masculino</h2>
+        <h2 style="margin-left: 45%;">Estado Civil: Solteiro</h2>
     </div>
-    <div>
-        <h3>Nome:</h3>
-        <h3>Idade:</h3>
-        <h3>Gênero:</h3>
-        <h3>Estado Civil:</h3>
+
+
+    <div class="top2">
+        <h2 style="text-align: center;">Sobre</h2>
+        <p style="text-align: center;">Sou um estudante de desenvolvimento de sistemas do senai</p>
+        <h2 style="text-align: center;">Soft Skills:</h2>
+        <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, consequatur dignissimos ut beatae impedit aperiam ea corporis quis amet error fugit tempora illo. Quaerat eum doloremque harum mollitia quia aliquam.</p>
+        <h2 style="text-align: center;">Hard Skills:</h2>
+        <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, consequatur dignissimos ut beatae impedit aperiam ea corporis quis amet error fugit tempora illo. Quaerat eum doloremque harum mollitia quia aliquam.</p>
     </div>
-</div>
 
-
-<div class="top2">
-    <h2 style="text-align: center;">Sobre</h2>
-    <p style="text-align: center;">Sou um estudante de desenvolvimento de sistemas do senai</p>
-</div>
-
-<div class="top3">
-    <h2 style="text-align: center;">Experiência</h2>
-    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem placeat? Architecto corporis temporibus accusantium eligendi praesentium cum quae, aut nulla molestias rem. Suscipit harum sit provident ea quod reiciendis.</p>
-</div>
-
-<div class="top4">
-    <h2 style="text-align: center;">projetos</h2>
-    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem placeat? Architecto corporis temporibus accusantium eligendi praesentium cum quae, aut nulla molestias rem. Suscipit harum sit provident ea quod reiciendis.</p>
-</div>
-
-<div class="top5">
-    <h2 style="text-align: center;">Formulário</h2>
-<p style="text-align: center;">entre em contato comigo para mais detalhes.</p>
-
-<div class="container">
-    <form action="/action_page.php">
-    <div class="row">
-        <div class="col-25">
-        <label for="Nome">Primeiro Nome</label>
-        </div>
-        <div class="col-75">
-        <input type="text" id="Nome" name="Nome" placeholder="Seu Nome...">
-        </div>
+    <div class="top3">
+        <h2 style="text-align: center;">Experiência</h2>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem placeat? Architecto corporis temporibus accusantium eligendi praesentium cum quae, aut nulla molestias rem. Suscipit harum sit provident ea quod reiciendis.</p>
     </div>
-    <div class="row">
-        <div class="col-25">
-        <label for="Sobrenome">Sobrenome</label>
-        </div>
-        <div class="col-75">
-        <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Seu Sobrenome...">
-        </div>
+
+    <div class="top4">
+        <h2 style="text-align: center;">projetos</h2>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem placeat? Architecto corporis temporibus accusantium eligendi praesentium cum quae, aut nulla molestias rem. Suscipit harum sit provident ea quod reiciendis.</p>
     </div>
-    <div class="row">
-        <div class="col-25">
-        <label for="País">País</label>
+
+    <div class="top5">
+        <h2 style="text-align: center;">Formulário</h2>
+    <p style="text-align: center;">entre em contato comigo para mais detalhes.</p>
+
+    <div class="container">
+        <form action="/action_page.php">
+        <div class="row">
+            <div class="col-25">
+            <label for="Nome">Primeiro Nome</label>
+            </div>
+            <div class="col-75">
+            <input type="text" id="Nome" name="Nome" placeholder="Seu Nome...">
+            </div>
         </div>
-        <div class="col-75">
-        <select id="país" name="País">
-            <option value="Brasil">Brasil</option>
-            <option value="Inglaterra">Inglaterra</option>
-            <option value="EUA">EUA</option>
-            <option value="Canadá">Canadá</option>
-        </select>
+        <div class="row">
+            <div class="col-25">
+            <label for="Sobrenome">Sobrenome</label>
+            </div>
+            <div class="col-75">
+            <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Seu Sobrenome...">
+            </div>
         </div>
+        <div class="row">
+            <div class="col-25">
+            <label for="País">País</label>
+            </div>
+            <div class="col-75">
+            <select id="país" name="País">
+                <option value="Brasil">Brasil</option>
+                <option value="Inglaterra">Inglaterra</option>
+                <option value="EUA">EUA</option>
+                <option value="Canadá">Canadá</option>
+            </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+            <label for="Mensagem">Mensagem</label>
+            </div>
+            <div class="col-75">
+            <textarea id="Mensagem" name="mensagem" placeholder="Escreva a sua mensagem..." style="height:200px"></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <input type="Envie" value="Envie">
+        </div>
+        </form>
     </div>
-    <div class="row">
-        <div class="col-25">
-        <label for="Mensagem">Mensagem</label>
-        </div>
-        <div class="col-75">
-        <textarea id="Mensagem" name="mensagem" placeholder="Escreva a sua mensagem..." style="height:200px"></textarea>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <input type="Envie" value="Envie">
-    </div>
-    </form>
-</div>
 
 
 
 
-</div>
+    </div>
 </body>
 
