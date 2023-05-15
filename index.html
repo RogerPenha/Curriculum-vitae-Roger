@@ -28,12 +28,13 @@
         color: #000;
         padding: 8px 16px;
         text-decoration: none;
+        text-align: center;
     }
 
     li a.active {
         background-color: #1204aa;
         color: white;
-        }
+    }
 
     li a:hover:not(.active) {
         background-color: #555;
@@ -41,32 +42,28 @@
         }
 
     
-    .top{
-        display: flex;
+    .Perfil{
         margin-left: 25%;
-        padding: 1px 12px;
-        height: 400px;
+        height: 600px;
+        background-color: #04AA6D;
+        text-align: center;
     }
     
-    .top > div {
+    .Perfil > div {
         text-align: center;
         line-height: 75px;
         font-size: 30px;
-        }
+    }
     
-    
-    
-    
-    
-    .top2{
+    .Sobre{
         margin-left: 25%;
         padding: 1px 12px;
-        height: 300px;
+        height: 400px;
         background-color: #555;
     
     }
 
-    .top3{
+    .Experiência{
         margin-left: 25%;
         padding: 1px 12px;
         height: 400px;
@@ -74,25 +71,24 @@
     
     }
 
-    .top4{
+    .Projetos{
         margin-left: 25%;
         padding: 1px 12px;
         height: 400px;
         background-color:rgb(9, 255, 0);
     
     }
-    .top5{
+    .Contatos{
         margin-left: 25%;
         padding: 1px 12px;
         height: 600px;
         background-color:rgb(255, 0, 0);
     
     }
-
     * {
         box-sizing: border-box;
-        }
-
+    }
+    
     input[type=text], select, textarea {
         width: 100%;
         padding: 12px;
@@ -129,54 +125,60 @@
     .col-25 {
         float: left;
         width: 25%;
-        margin-top: 6px;
+        margi
+        n-top: 6px;
         }
-
     .col-75 {
         float: left;
         width: 75%;
         margin-top: 6px;
         }
-
-/* Clear floats after the columns */
-        .row::after {
+        
+    .row::after {
         content: "";
         display: table;
         clear: both;
         }
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
         .col-25, .col-75, input[type=submit] {
             width: 100%;
             margin-top: 0;
         }
         }
+
+    nav ul{
+        gap: 2rem;
+        position: fixed;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
 </style>
-
 </head>
-
-<body>
-    
+<nav>  
     <ul>
         <li><h2 style="text-align: center;">Menu</h2></li>
-        <li><a class="active" href="#Sobre">Sobre</a></li>
+        <li><a href="#Perfil">Perfil</a></li>
+        <li><a href="#Sobre">Sobre</a></li>
         <li><a href="#Experiência">Experiência</a></li>
         <li><a href="#Projetos">Projetos</a></li>
-        <li><a href="#ontatos">Contatos</a></li>
+        <li><a href="#Contatos">Contatos</a></li>
     </ul
+</nav>
 
-    <div class="top">
-        <h1 style="margin-left: 50%;">Meu Currículo</h1>
-        <p style="margin-left: 45%;"><img src="foto4.png" alt="minha foto"></p>
-        <h2 style="margin-left: 45%;">Nome: Roger Souza Pereira Penha</h2>
-        <h2 style="margin-left: 45%">Idade: 17</h2>
-        <h2 style="margin-left: 45%">Gênero: Masculino</h2>
-        <h2 style="margin-left: 45%;">Estado Civil: Solteiro</h2>
+<body>
+    <div class="Perfil" id="Perfil">
+        <h1 >Meu Currículo</h1>
+        <p><img src="foto4.png" alt="minha foto"></p>
+        <h2>Nome: Roger Souza Pereira Penha</h2>
+        <h2>Idade: 17</h2>
+        <h2>Gênero: Masculino</h2>
+        <h2>Estado Civil: Solteiro</h2>
     </div>
 
 
-    <div class="top2">
+    <div class="Sobre" id="Sobre">
         <h2 style="text-align: center;">Sobre</h2>
         <p style="text-align: center;">Sou um estudante de desenvolvimento de sistemas do senai</p>
         <h2 style="text-align: center;">Soft Skills:</h2>
@@ -185,19 +187,19 @@
         <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, consequatur dignissimos ut beatae impedit aperiam ea corporis quis amet error fugit tempora illo. Quaerat eum doloremque harum mollitia quia aliquam.</p>
     </div>
 
-    <div class="top3">
+    <div class="Experiência" id="Experiência">
         <h2 style="text-align: center;">Experiência</h2>
         <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem placeat? Architecto corporis temporibus accusantium eligendi praesentium cum quae, aut nulla molestias rem. Suscipit harum sit provident ea quod reiciendis.</p>
     </div>
 
-    <div class="top4">
-        <h2 style="text-align: center;">projetos</h2>
+    <div class="Projetos" id="Projetos">
+        <h2 style="text-align: center;">Projetos</h2>
         <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem placeat? Architecto corporis temporibus accusantium eligendi praesentium cum quae, aut nulla molestias rem. Suscipit harum sit provident ea quod reiciendis.</p>
     </div>
 
-    <div class="top5">
+    <div class="Contatos" id="Contatos">
         <h2 style="text-align: center;">Formulário</h2>
-    <p style="text-align: center;">entre em contato comigo para mais detalhes.</p>
+    <h3 style="text-align: center;">Entre em contato comigo para mais detalhes:</h3>
 
     <div class="container">
         <form action="/action_page.php">
@@ -244,10 +246,6 @@
         </div>
         </form>
     </div>
-
-
-
-
     </div>
 </body>
 
