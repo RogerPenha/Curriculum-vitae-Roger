@@ -9,6 +9,9 @@
         Currículo
     </title>
 </head>
+
+<!--A nav bar está definindo o endereço dos botões na qual os ids serão distribuídos nas respectivas divs*-->
+
 <nav>  
     <ul>
         <li>
@@ -37,12 +40,19 @@
             </a>
         </li>
         <li>
+            <a href="#Formações">
+                Formações
+            </a>
+        </li>
+        <li>
             <a href="#Contatos">
                 Contatos
             </a>
         </li>
     </ul>
 </nav>
+
+<!--o reader está definindo todo o conteúdo do perfil-->
 
 <header>
     <div class="Perfil" id="Perfil">
@@ -66,6 +76,9 @@
         </h1>
     </div>
 </header>
+
+<!--no body está o conteúdo de ttodas as flexboxs exceto o perfil-->
+
 <body>
     <div class="Sobre" id="Sobre">
         <h1 style="text-align: center;">
@@ -108,22 +121,28 @@
         </p>
     </div>
 
-    <div class="Formação">
+    <div class="Formação" id="Formações">
         <h1 style="text-align: center;">
-            Formação Acadêmica
+            Formações Acadêmicas
         </h1>
+        
+        <!--abaixo está a tabela das formações acadêmicas-->
+
         <table>
-                
-            
             <tr>
                 <th>
                     <p>
-                        <img src="https://vagas.byintera.com/wp-content/uploads/2021/02/11.png" alt="Logo da Conquer">
+                        <img src="img-conquer.png" alt="Logo da Conquer">
                     </p>
                 </th>
                 <th>   
                     <p>
-                        <img src="https://o.remove.bg/downloads/41cae321-db34-439d-89df-1c0a00ad3f43/download-removebg-preview.png" alt="logo da cultura inglesa">
+                        <img src="img-culturainglesa.png" alt="logo da cultura inglesa">
+                    </p>
+                </th>
+                <th>   
+                    <p>
+                        <img src="https://www.getwet.com.br/wp-content/uploads/2021/06/logotipo-seguranca-do-trabalho-png.png"alt="logo sobre segurança no trabalho">
                     </p>
                 </th>
             </tr>
@@ -134,12 +153,37 @@
                 <th>
                     Curso de Inglês
                 </th>
+                <th>
+                    Segurança no Trabalho
+                </th>
             </tr>
-
-
-
+            <tr>
+                <th>
+                    <img src="https://gtrigueiro.com.br/wp-content/uploads/2021/09/lgpd-vanzolini-1200x874-1-1024x746.jpg" alt="Imagem sobre LGPD">
+                </th>
+                <th>
+                    <img src="https://images.ecycle.com.br/wp-content/uploads/2021/05/16221652/economia-circular-pb.jpg.webp" alt="Econômia Circular">
+                </th>
+                <th>
+                    <img src="https://s2.glbimg.com/cbkjkI4PEX1GRHHY2QCG13J9b40=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/m/B/TpaifBRRut9I7YWx7xjg/1000-f-277911478-8uic7ehexx2eqg8zmdwvfriqwvugd9ac.jpg" alt="Imagem sobra o 5G">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Curso de LGPD
+                </th>
+                <th>
+                    Curso de Econômia Circular
+                </th>
+                <th>
+                    Curso de 5G
+                </th>
+            </tr>
         </table>
     </div>
+    
+    <!--abaixo está toda a configuração do formulário-->
+
     <div class="Contatos" id="Contatos">
         <h2 style="text-align: center;">
             Formulário
