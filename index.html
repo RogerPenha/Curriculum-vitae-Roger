@@ -4,207 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo</title>
-
-<style>
-    body {
-        margin: 0;
-        font: normal 16px Times ;
-}
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 25%;
-        background-color: #f1f1f1;
-        position: fixed;
-        height: 100%;
-        overflow: auto;
-    }
-
-    li a {
-        display: block;
-        color: #000;
-        padding: 8px 16px;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    li a.active {
-        background-color: #1204aa;
-        color: white;
-    }
-
-    li a:hover:not(.active) {
-        background-color: #555;
-        color: white;
-        }
-
-    
-    .Perfil{
-        margin-left: 25%;
-        height: 600px;
-        background-color: #04AA6D;
-        text-align: center;
-    }
-    
-    .Perfil > div {
-        text-align: center;
-        line-height: 75px;
-        font-size: 30px;
-    }
-    
-    .Sobre{
-        margin-left: 25%;
-        padding: 1px 12px;
-        height: 400px;
-        background-color: #555;
-    
-    }
-
-    .Experiência{
-        margin-left: 25%;
-        padding: 1px 12px;
-        height: 400px;
-        background-color:blue;
-    
-    }
-
-    .Projetos{
-        margin-left: 25%;
-        padding: 1px 12px;
-        height: 400px;
-        background-color:rgb(9, 255, 0);
-    
-    }
-    .Contatos{
-        margin-left: 25%;
-        padding: 1px 12px;
-        height: 600px;
-        background-color:rgb(255, 0, 0);
-    
-    }
-    * {
-        box-sizing: border-box;
-    }
-    
-    input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-        }
-
-    label {
-        padding: 12px 12px 12px 0;
-        display: inline-block;
-        }
-
-    input[type=submit] {
-        background-color: #04AA6D;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-        }
-
-    input[type=submit]:hover {
-        background-color:blue;
-        }
-
-    .container {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-        }
-
-    .col-25 {
-        float: left;
-        width: 25%;
-        margin-top: 6px;
-        }
-    .col-75 {
-        float: left;
-        width: 75%;
-        margin-top: 6px;
-        }
-        
-    .row::after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-    @media screen and (max-width: 600px) {
-        .col-25, .col-75, input[type=submit] {
-            width: 100%;
-            margin-top: 0;
-        }
-        }
-
-    nav ul{
-        gap: 2rem;
-        position: fixed;
-    }
-
-    html{
-        scroll-behavior: smooth;
-    }
-</style>
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Currículo
+    </title>
 </head>
+
+<!--A nav bar está definindo o endereço dos botões na qual os ids serão distribuídos nas respectivas divs*-->
+
 <nav>  
     <ul>
-        <li><h2 style="text-align: center;">Menu</h2></li>
-        <li><a href="#Perfil">Perfil</a></li>
-        <li><a href="#Sobre">Sobre</a></li>
-        <li><a href="#Experiência">Experiência</a></li>
-        <li><a href="#Projetos">Projetos</a></li>
-        <li><a href="#Contatos">Contatos</a></li>
-    </ul
+        <li>
+            <h2 style="text-align: center;">
+                MENU
+            </h2>
+        </li>
+        <li>
+            <a href="#Perfil">
+                Perfil
+            </a>
+        </li>
+        <li>
+            <a href="#Sobre">
+                Sobre
+            </a>
+        </li>
+        <li>
+            <a href="#Experiência">
+                Experiência
+            </a>
+        </li>
+        <li>
+            <a href="#Projetos">
+                Projetos
+            </a>
+        </li>
+        <li>
+            <a href="#Formações">
+                Formações
+            </a>
+        </li>
+        <li>
+            <a href="#Contatos">
+                Contatos
+            </a>
+        </li>
+    </ul>
 </nav>
 
-<body>
+<!--o reader está definindo todo o conteúdo do perfil-->
+
+<header>
     <div class="Perfil" id="Perfil">
-        <h1 >Meu Currículo</h1>
-        <p><img src="foto4.png" alt="minha foto"></p>
-        <h2>Nome: Roger Souza Pereira Penha</h2>
-        <h2>Idade: 17</h2>
-        <h2>Gênero: Masculino</h2>
-        <h2>Estado Civil: Solteiro</h2>
+        <h1>
+            Meu Currículo
+        </h1>
+        <h1>
+            <img src="foto4.png" alt="minha foto">
+        </h1>
+        <h1>
+            Nome: Roger Souza Pereira Penha
+        </h1>
+        <h1>
+            Idade: 17
+        </h1>
+        <h1>
+            Gênero: Masculino
+        </h1>
+        <h1>
+            Estado Civil: Solteiro
+        </h1>
     </div>
+</header>
 
+<!--no body está o conteúdo de ttodas as flexboxs exceto o perfil-->
 
+<body>
     <div class="Sobre" id="Sobre">
-        <h2 style="text-align: center;">Sobre</h2>
-        <p style="text-align: center;">Sou um estudante de desenvolvimento de sistemas do senai</p>
-        <h2 style="text-align: center;">Soft Skills:</h2>
-        <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, consequatur dignissimos ut beatae impedit aperiam ea corporis quis amet error fugit tempora illo. Quaerat eum doloremque harum mollitia quia aliquam.</p>
-        <h2 style="text-align: center;">Hard Skills:</h2>
-        <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, consequatur dignissimos ut beatae impedit aperiam ea corporis quis amet error fugit tempora illo. Quaerat eum doloremque harum mollitia quia aliquam.</p>
+        <h1 style="text-align: center;">
+        Sobre
+        </h1>
+        <p style="text-align: center;">
+            Sou um estudante de desenvolvimento de sistemas do senai
+        </p>
+        <h2 style="text-align: center;">
+            Soft Skills:
+        </h2>
+        <p style="text-align: center;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, consequatur dignissimos ut beatae impedit aperiam ea corporis quis amet error fugit tempora illo. Quaerat eum doloremque harum mollitia quia aliquam.
+        </p>
+        <h2 style="text-align: center;">
+            Hard Skills:
+        </h2>
+        <p style="text-align: center;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, consequatur dignissimos ut beatae impedit aperiam ea corporis quis amet error fugit tempora illo. Quaerat eum doloremque harum mollitia quia aliquam.
+        </p>
     </div>
-
     <div class="Experiência" id="Experiência">
-        <h2 style="text-align: center;">Experiência</h2>
-        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem placeat? Architecto corporis temporibus accusantium eligendi praesentium cum quae, aut nulla molestias rem. Suscipit harum sit provident ea quod reiciendis.</p>
+        <h2 style="text-align: center;">
+            Experiência
+        </h2>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem placeat? Architecto corporis temporibus accusantium eligendi praesentium cum quae, aut nulla molestias rem. Suscipit harum sit provident ea quod reiciendis. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia aperiam, in eveniet cupiditate quo delectus cumque sequi itaque commodi repellat asperiores nam sed nesciunt eum quam saepe, reprehenderit neque.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam culpa nulla quidem maxime at magnam architecto. Tempore provident cupiditate repellat, accusantium molestiae quam laboriosam, labore, fugit molestias sit laudantium magni!
+        </p>
+    </div>
+    <div class="Projetos" id="Projetos">
+        <h2 style="text-align: center;">
+            Projetos
+        </h2>
+        <p style="text-align: center;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem placeat? Architecto corporis temporibus accusantium eligendi praesentium cum quae, aut nulla molestias rem. Suscipit harum sit provident ea quod reiciendis.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat alias sunt, porro sit exercitationem laborum veritatis quas vel magni ut nostrum neque velit ratione quae soluta similique voluptas ullam praesentium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa adipisci ipsa fugit quidem sit cum cupiditate voluptate, illum consectetur quos. Dolore accusantium distinctio perferendis dolorem est placeat, sit suscipit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident non, asperiores nisi consequatur delectus totam. Praesentium expedita dolor cupiditate! Quod mollitia, veritatis sed qui earum temporibus ex error quis expedita.
+        </p>
     </div>
 
-    <div class="Projetos" id="Projetos">
-        <h2 style="text-align: center;">Projetos</h2>
-        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem placeat? Architecto corporis temporibus accusantium eligendi praesentium cum quae, aut nulla molestias rem. Suscipit harum sit provident ea quod reiciendis.</p>
+    <div class="Formação" id="Formações">
+        <h1 style="text-align: center;">
+            Formações Acadêmicas
+        </h1>
+        
+        <!--abaixo está a tabela das formações acadêmicas-->
+
+        <table>
+            <tr>
+                <th>
+                    <p>
+                        <img src="img-conquer.png" alt="Logo da Conquer">
+                    </p>
+                </th>
+                <th>   
+                    <p>
+                        <img src="img-culturainglesa.png" alt="logo da cultura inglesa">
+                    </p>
+                </th>
+                <th>   
+                    <p>
+                        <img src="https://www.getwet.com.br/wp-content/uploads/2021/06/logotipo-seguranca-do-trabalho-png.png"alt="logo sobre segurança no trabalho">
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Curso de Comunicação e Oratória
+                </th>
+                <th>
+                    Curso de Inglês
+                </th>
+                <th>
+                    Segurança no Trabalho
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="https://gtrigueiro.com.br/wp-content/uploads/2021/09/lgpd-vanzolini-1200x874-1-1024x746.jpg" alt="Imagem sobre LGPD">
+                </th>
+                <th>
+                    <img src="https://images.ecycle.com.br/wp-content/uploads/2021/05/16221652/economia-circular-pb.jpg.webp" alt="Econômia Circular">
+                </th>
+                <th>
+                    <img src="https://s2.glbimg.com/cbkjkI4PEX1GRHHY2QCG13J9b40=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/m/B/TpaifBRRut9I7YWx7xjg/1000-f-277911478-8uic7ehexx2eqg8zmdwvfriqwvugd9ac.jpg" alt="Imagem sobra o 5G">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Curso de LGPD
+                </th>
+                <th>
+                    Curso de Econômia Circular
+                </th>
+                <th>
+                    Curso de 5G
+                </th>
+            </tr>
+        </table>
     </div>
+    
+    <!--abaixo está toda a configuração do formulário-->
 
     <div class="Contatos" id="Contatos">
-        <h2 style="text-align: center;">Formulário</h2>
-    <h3 style="text-align: center;">Entre em contato comigo para mais detalhes:</h3>
+        <h2 style="text-align: center;">
+            Formulário
+        </h2>
+    <h3 style="text-align: center;">
+        Entre em contato comigo para mais detalhes:
+    </h3>
 
     <div class="container">
         <form action="/action_page.php">
         <div class="row">
             <div class="col-25">
-            <label for="Nome">Primeiro Nome</label>
+            <label for="Nome">
+                Primeiro Nome
+            </label>
             </div>
             <div class="col-75">
             <input type="text" id="Nome" name="Nome" placeholder="Seu Nome...">
@@ -212,7 +206,9 @@
         </div>
         <div class="row">
             <div class="col-25">
-            <label for="Sobrenome">Sobrenome</label>
+            <label for="Sobrenome">
+                Sobrenome
+            </label>
             </div>
             <div class="col-75">
             <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Seu Sobrenome...">
@@ -220,20 +216,32 @@
         </div>
         <div class="row">
             <div class="col-25">
-            <label for="País">País</label>
+            <label for="País">
+                País
+            </label>
             </div>
             <div class="col-75">
             <select id="país" name="País">
-                <option value="Brasil">Brasil</option>
-                <option value="Inglaterra">Inglaterra</option>
-                <option value="EUA">EUA</option>
-                <option value="Canadá">Canadá</option>
+                <option value="Brasil">
+                    Brasil
+                </option>
+                <option value="Inglaterra">
+                    Inglaterra
+                </option>
+                <option value="EUA">
+                    EUA
+                </option>
+                <option value="Canadá">
+                    Canadá
+                </option>
             </select>
             </div>
         </div>
         <div class="row">
             <div class="col-25">
-            <label for="Mensagem">Mensagem</label>
+            <label for="Mensagem">
+                Mensagem
+            </label>
             </div>
             <div class="col-75">
             <textarea id="Mensagem" name="mensagem" placeholder="Escreva a sua mensagem..." style="height:200px"></textarea>
@@ -241,10 +249,13 @@
         </div>
         <br>
         <div class="row">
-            <input type="Envie" value="Envie">
+            <input type="submit" value="Enviar">
         </div>
         </form>
     </div>
     </div>
 </body>
 
+<footer>
+    <p>Desenvolvido por <a href="https://github.com/RogerPenha/Curriculum-vitae-Roger.git">RogerPenha</a>.© Todos os Direitos Reservados</p>
+</footer>
