@@ -136,7 +136,7 @@ input[type=submit]:hover {
     }
 @media screen and (max-width: 500px) {
     .col-25, .col-75, input[type=submit] {
-        width: 100%;
+        max-width: 100%;
         margin-top: 0;
     }
     }
@@ -159,7 +159,7 @@ html{
 }
 
 img{
-    width: 200px;
+    max-width: 100%;
     border-radius: 20px;
 }
 
