@@ -154,6 +154,26 @@ html{
 h2 {
     font-family: 'Times New Roman', Times, serif;
 }
+.Formação{
+    width: 65%;
+    margin-top: 2%;
+    margin-left: 25%;
+    padding: 1px 12px;
+    background-color: rgb(54, 54, 54);
+    color: rgb(252, 0, 239);
+    border-radius: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img{
+    width: 200px;
+}
+
+
+
+
+
+
 footer{
     margin-left: 35%;
     background-color: rgb(20, 20, 20);
